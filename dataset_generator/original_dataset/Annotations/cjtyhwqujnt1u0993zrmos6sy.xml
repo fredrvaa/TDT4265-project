@@ -1,0 +1,26 @@
+<annotation>
+    <folder>JPEGImages</folder>
+    <filename>cjtyhwqujnt1u0993zrmos6sy.jpeg</filename>
+    <path>C:\Users\Fredrik\OneDrive - NTNU\NTNU 8. sem\DataSyn\TDT4265-project\dataset_generator\JPEGImages\cjtyhwqujnt1u0993zrmos6sy.jpeg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>980</width>
+        <height>551</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>smoke</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+                <xmin>383</xmin>
+                <ymin>9</ymin>
+                <xmax>598</xmax>
+                <ymax>333</ymax>
+            </bndbox>
+        </object>
+    </annotation>

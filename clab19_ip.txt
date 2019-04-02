@@ -1,0 +1,22 @@
+clab19:~$ ip addr show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 30:9c:23:83:51:74 brd ff:ff:ff:ff:ff:ff
+    inet 129.241.104.37/23 brd 129.241.105.255 scope global enp0s31f6
+       valid_lft forever preferred_lft forever
+    inet6 2001:700:300:2121:329c:23ff:fe83:5174/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 2591867sec preferred_lft 604667sec
+    inet6 fe80::329c:23ff:fe83:5174/64 scope link 
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:8e:9f:69:61 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:8eff:fe9f:6961/64 scope link 
+       valid_lft forever preferred_lft forever
+

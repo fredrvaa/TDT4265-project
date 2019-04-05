@@ -23,15 +23,18 @@ vertical_down = True
 
 pred_box = None
 
+id = 0
+
 while(1):
+    id += 1
     if pred_box == None:
         if horizontal:
-            x_curr += 1
-            horizontally_moved += 1
+            x_curr += 5
+            horizontally_moved += 5
         elif vertical_up:
-            y_curr -= 1
+            y_curr -= 5
         elif vertical_down:
-            y_curr += 1
+            y_curr += 5
 
         if y_curr >= height - size and vertical_down:
             horizontal = True
@@ -51,4 +54,5 @@ while(1):
 
     camera_image = panorama_image[y_curr-size:y_curr+size, x_curr-size:x_curr+size]
     cv2.imshow('panorama', camera_image)
+    cv2.imwrite('panorama/{}.jpg'.format(id), camera_image)
     cv2.waitKey(10)
